@@ -217,11 +217,6 @@ def readSomething():
         toAnnounce += text + " or "
 
     if len(toAnnounce) > 4:
-        robot.driveTime(0, 100, 2000)
-        moveHeadRight()
-        time.sleep(3)
-        robot.driveTime(0, -100, 2000)
-        moveHeadLeft()
         fileName = tts.say_this(toAnnounce[0:-4])
         audioFilePath = fileName
         print(audioFilePath)
