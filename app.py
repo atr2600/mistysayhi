@@ -1,4 +1,5 @@
-import mistyPy
+# import mistyPy
+import misty
 import os, requests, time
 from xml.etree import ElementTree
 import requests
@@ -179,7 +180,7 @@ class TextToSpeech(object):
 # Get Image Context
 # -----------------------------
 mistyIPAddress = "192.168.43.62"
-robot = mistyPy.Robot(mistyIPAddress)
+robot = misty.Robot(mistyIPAddress)
 
 
 def moveHeadLeft():
